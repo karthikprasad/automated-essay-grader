@@ -1,0 +1,103 @@
+***********************************************************************************************************
+		   AUTOMATED ESSAY GRADER
+You can contact me by mail: karthikprasad@engineer.com.
+You can connect with me on Linkedin: www.linkedin.com/in/prasadkarthik
+***********************************************************************************************************
+
+An Automated Essay Grader,which scores student essays based on the following features:
+	* Spellings
+	* Structure and Grammar
+	* Language flow - Coherence
+	* Statistics of the Essay.
+
+AEG is an engine which automatically grades an English essay based on: Essay Statistics, Spelling, Grammar, Coherence, Frequent Phrases and Vocabulary. The techniques employed to achieve this encompass, not only a vast area of computer science, but also some ‘abstract aspects’ of the English language and grammar; the subtle points such as the deviation from the central topic, structure of the sentences, etc., that help determine the qualities of a good essay. We have developed our own concept of Conceptual Word Graph and designed an algorithm to analyse the Essay Coherence without a corpus.
+
+The whole system is modelled using Modular approach.
+
+	* Input:
+		1. The input should be in the text file format
+		2. The input file should contain:
+			a. The topic of the essay.
+			b. The essay itself.
+		3. The topic should be the first paragraph of the file.
+		4. The topic and the essay should be separated by a blank line.
+
+	* Assumptions:
+		1. The essays will be in “simple” format - without any bullets and numbering.
+		2. The paragraphs in the essay, if it contains multiple paragraphs, will be separated by a blank line.
+		3. The essay will be on the lines of GRE/GMAT essays.
+
+	* Output
+		1. A report with scores for individual parameters based on which the essay was graded.
+		2. An overall score computed by taking the weighted mean of individual scores.
+		3. A statistical report on the number of lines, words, paragraphs, average length of sentences, difference in length between the longest and the shortest sentence, etc.
+		
+		* Report is an html file.
+
+
+***********************************************************************************************************
+
+SETUP:
+	1) Install Link Parser, python interpreter and the required python libraries. (see next section)
+	2) change the current working directory to AEG.
+	3) run the script aeg.py --> $ python aeg.py
+
+	* the generated report will be an html file with the same name as that of the input file in Reports directory.
+
+***********************************************************************************************************
+
+DEPENDENCIES:
+	* Platform:
+		Linux Kernel 3.0 and above.
+
+	* Link Parser - http://www.link.cs.cmu.edu/link/
+
+	* Python and Libraries
+		1) Python 2.7 - http://www.python.org/getit/releases/2.7/
+		2) Python bindings for Link Grammar Parser - Pylinkgrammar 0.1.20 - http://pypi.python.org/pypi/pylinkgrammar/0.1.20#downloads
+		3) A Spell-Checking Library for Python - Pyenchant - http://packages.python.org/pyenchant/api/enchant.html
+		4a) Natural Language Toolkit - http://nltk.googlecode.com/files/nltk-2.0.1rc1.tar.gz
+		4b) nltk.corpus -> wordnet and stopwords
+		5) PyYAML - http://pyyaml.org/download/pyyaml/PyYAML-3.09.tar.gz
+		6) NetworkX - http://networkx.lanl.gov/download/networkx/
+		7) GNUPlot - http://gnuplot-py.sourceforge.net/
+		
+***********************************************************************************************************
+
+REFERENCES:
+	[1] Page, E., Shermis, M. D., Lavoie, M. J., Marsiglio, C. C., Kock, M. M., Fogel, M. (1995). Computer Grading of Essays. Address for APA Annual Meeting. Available at "http://134.68.49.185/pegdemo"
+
+	[2] MacDonald, M. et al. (1982).The writer's workbench: Computer Aids for Text Analysis. IEEE Trans.Comm., 30, 1, 105-110
+
+	[3] Laham, D., & Foltz, P. W. (2000). The intelligent essay assessor. In T.K. Landauer (Ed.), IEEE Intelligent Systems, 2000
+
+	[4] Landauer, T. K., Foltz, P. W., & Laham, D. (1998). Introduction to Latent Symantic Analysis. Discourse Processes, 25, 259.
+
+	[5] Burstein, J., Kukich, K., Wolff, S., Chi, L., & Chodorow, M. (1998). "Computer Analysis of Essays," Proc. NCME Symp.Automated Scoring,1998.
+
+	[6] Temperley, D., Sleator, D., Lafferty, J. (2004). Documentation of Link Grammar. Available at "http://www.link.cs.cmu.edu/link/"
+
+	[7] yED Graphics editor Avialable at "http://www.yworks.com/en/products_yed_about.html"
+
+	[8] Berry, M. W., Liang, M. (1992). Large Scale Singular Value Computations. International Journal of Supercomputer Applications 6:1, 13-49. Available at " http://www.netlib.org/svdpack"
+
+	[9] Marti, A. The debate on automated essay grading.
+	Avialable at
+	"http://www.knowledgetechnologies.com/presskit/KAT_IEEEdebate.pdf"
+
+	[10] Ikdam Alhami, and Izzat Alsmadi (2011). Automatic Code Homework Grading Based on Concept Extraction. International Journal of Software Engineering and Its Applications. 5:4, 77-84
+
+
+	[11] D. Higgins, J. Burstein and Y. Attali. Identifying off-topic student essays without Topic-specific training data. Natural Language Engineering 12 (2): 145–159.
+
+	[12] Joel Tetreault, Jennifer Foster, Jennifer Foster. (2010). Using Parse Features for Preposition Selection and Error Detection. Proceedings of the ACL 2010 Conference Short Papers. 353–358.
+
+	[13] Victor D. O. Santos, Marjolijn Verspoor, John Nerbonne. Identifying Important Factors in Essay Grading Using Machine Learning.
+
+	[14] Salvatore Valenti, Francesca Neri, Alessandro Cucchiarelli. (2003). Salvatore Valenti, Francesca Neri and Alessandro Cucchiarelli. Journal of Information Technology Education. Vol. 2.
+
+	[15] Tuomo Kakkonen, and Erkki Sutinen. (2004). Automatic Assessment of the Content of Essays Based on Course Materials..
+
+	[16] Tuomo Kakkonen, Niko Myller, Jari Timonen, Erkki Sutinen. (2005). Automatic Essay Grading with Probabilistic Latent Semantic Analysis.
+
+	[17] Lemaire, Dessus (2001). A System to Assess the Semantic Content of Student Essays

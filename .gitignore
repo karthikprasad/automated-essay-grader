@@ -1,0 +1,5 @@
+*.pyc
+*~
+NOTE
+AEG/Coherence/Coherence.py
+AEG/graph.gml
